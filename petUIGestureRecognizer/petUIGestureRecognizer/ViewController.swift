@@ -8,7 +8,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     @IBAction func panAction(_ gesture: UIPanGestureRecognizer) {
@@ -32,7 +31,6 @@ class ViewController: UIViewController {
                 blueView.isHidden = true
             }
         }
-        
     }
     
     @IBAction func purpleViewPanAction(_ gesture: UIPanGestureRecognizer) {
