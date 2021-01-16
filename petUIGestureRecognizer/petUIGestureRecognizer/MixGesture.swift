@@ -39,4 +39,23 @@ class MixGesture: UIGestureRecognizer {
             return
         }
         
+        let direction: MixingGestureDirection
+        
+        if horizontalDifference < 0 {
+            direction = .left
+        } else {
+            direction = .right
+        }
+        
+        if finalDirection == .underfined || (finalDirection == .left && direction == .right) || (finalDirection == .right && direction == .left) {
+            
+            mixingStartPoint = mixingLocation
+            finalDirection = direction
+            mixingNumber += 1
+            
+            if state == .possible && mixingNumber > requiredMovements {
+                state = .ended
+            }
+        }
+    }
 }
