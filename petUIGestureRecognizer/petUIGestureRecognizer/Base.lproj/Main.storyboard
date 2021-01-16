@@ -20,6 +20,10 @@
                                 <rect key="frame" x="95" y="143" width="165" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="kWn-SO-WE0" appends="YES" id="rAh-MK-DuH"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2DS-lJ-PF4">
                                 <rect key="frame" x="206" y="358" width="108" height="128"/>
@@ -42,6 +46,7 @@
                         <outlet property="delegate" destination="BYZ-38-t0r" id="fF6-3B-oni"/>
                     </connections>
                 </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="kWn-SO-WE0"/>
             </objects>
             <point key="canvasLocation" x="-146.37681159420291" y="137.94642857142856"/>
         </scene>
