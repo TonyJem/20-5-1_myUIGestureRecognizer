@@ -58,4 +58,12 @@ class MixGesture: UIGestureRecognizer {
             }
         }
     }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent) {
+        reset()
+    }
+    
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent) {
+        reset()
+    }
 }
