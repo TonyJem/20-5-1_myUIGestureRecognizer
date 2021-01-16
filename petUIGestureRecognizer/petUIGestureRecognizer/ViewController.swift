@@ -2,6 +2,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var purpleView: UIView!
+    @IBOutlet weak var blueView: UIView!
+    @IBOutlet weak var orangeView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

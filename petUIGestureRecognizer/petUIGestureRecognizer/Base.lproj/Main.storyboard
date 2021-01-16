@@ -50,6 +50,11 @@
                             <constraint firstItem="JEA-92-SyC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fQ3-WG-NR9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueView" destination="2DS-lJ-PF4" id="N9V-Xk-hsK"/>
+                        <outlet property="orangeView" destination="JEA-92-SyC" id="6Vj-E7-TaG"/>
+                        <outlet property="purpleView" destination="4Jl-Zo-FXf" id="wkG-sY-5kB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="0IG-Cy-4F6">
