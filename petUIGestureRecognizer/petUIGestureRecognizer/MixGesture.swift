@@ -28,4 +28,15 @@ class MixGesture: UIGestureRecognizer {
         guard let touch = touches.first else { return }
         mixingStartPoint = touch.location(in: view)
     }
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent) {
+        guard let touch = touches.first else { return }
+        
+        let mixingLocation = touch.location(in: view)
+        let horizontalDifference = mixingLocation.x - mixingStartPoint.x
+        
+        if abs(horizontalDifference) < CGFloat(distanceForMixGesture) {
+            return
+        }
+        
 }
