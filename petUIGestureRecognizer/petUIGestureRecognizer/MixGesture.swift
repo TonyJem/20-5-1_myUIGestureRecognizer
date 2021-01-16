@@ -23,4 +23,9 @@ class MixGesture: UIGestureRecognizer {
             state = .failed
         }
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent) {
+        guard let touch = touches.first else { return }
+        mixingStartPoint = touch.location(in: view)
+    }
 }
