@@ -1,5 +1,10 @@
 import UIKit
 
-class MixGesture: UIGestureRecognizer {
+enum MixingGestureDirection {
+    case left
+    case right
+    case underfined
+}
 
+class MixGesture: UIGestureRecognizer {
 }
