@@ -7,4 +7,10 @@ enum MixingGestureDirection {
 }
 
 class MixGesture: UIGestureRecognizer {
+    let requiredMovement = 2
+    let distanceForMixGesture: CGFloat = 35
+    
+    var mixingNumber = 0
+    var mixingStartPoint: CGPoint = .zero
+    var finalDirection: MixingGestureDirection = .underfined
 }
