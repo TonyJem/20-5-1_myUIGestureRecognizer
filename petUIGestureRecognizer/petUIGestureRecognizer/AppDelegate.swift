@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  petUIGestureRecognizer
-//
-//  Created by Office-iMac on 2021-01-15.
-//
-
 import UIKit
 
 @main

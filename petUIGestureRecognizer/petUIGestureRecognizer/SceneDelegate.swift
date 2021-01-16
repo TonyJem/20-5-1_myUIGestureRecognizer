@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  petUIGestureRecognizer
-//
-//  Created by Office-iMac on 2021-01-15.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
