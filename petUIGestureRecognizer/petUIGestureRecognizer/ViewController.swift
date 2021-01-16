@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @IBOutlet weak var purpleView: UIView!
     @IBOutlet weak var blueView: UIView!
@@ -8,6 +8,24 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let mixingGesture = MixGesture(target: self, action: #selector(handleMixing))
+        mixingGesture.delegate = self
+        blueView.addGestureRecognizer(mixingGesture)
+        
+    }
+    
+    @objc func handleMixing(_ gesture: MixGesture){
+    
+        let orangeViewX = orangeView.frame.minX
+        let orangeViewY = orangeView.frame.minY
+        let orangeViewWidth = orangeView.frame.width
+        let orangeViewHeight = orangeView.frame.height
+        
+        orangeView.frame = CGRect(x: orangeViewX,
+                                  y: orangeViewY,
+                                  width: orangeViewWidth,
+                                  height: orangeViewHeight)
     }
     
     @IBAction func panAction(_ gesture: UIPanGestureRecognizer) {
