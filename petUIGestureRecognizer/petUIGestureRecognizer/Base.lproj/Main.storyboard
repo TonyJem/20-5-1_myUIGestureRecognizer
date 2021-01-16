@@ -48,6 +48,7 @@
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="kWn-SO-WE0">
                     <connections>
+                        <action selector="purpleViewPanAction:" destination="BYZ-38-t0r" id="yyJ-02-ANx"/>
                         <outlet property="delegate" destination="8bC-Xf-vdC" id="FWa-ff-VPa"/>
                     </connections>
                 </panGestureRecognizer>

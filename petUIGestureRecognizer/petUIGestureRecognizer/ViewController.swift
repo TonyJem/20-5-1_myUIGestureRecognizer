@@ -20,4 +20,8 @@ class ViewController: UIViewController {
         gesture.setTranslation(.zero, in: view)
         guard gesture.state == .ended else { return }
     }
+    
+    @IBAction func purpleViewPanAction(_ sender: UIPanGestureRecognizer) {
+        
+    }
 }
