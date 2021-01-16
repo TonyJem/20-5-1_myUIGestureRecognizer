@@ -7,7 +7,7 @@ enum MixingGestureDirection {
 }
 
 class MixGesture: UIGestureRecognizer {
-    let requiredMovement = 2
+    let requiredMovements = 2
     let distanceForMixGesture: CGFloat = 35
     
     var mixingNumber = 0
