@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     
     @IBAction func panAction(_ gesture: UIPanGestureRecognizer) {
         
+        let blueViewFrame = blueView.frame
+        let orangeViewFrame = orangeView.frame
+        
         let gestureTranslation = gesture.translation(in: view)
         guard let gestureView = gesture.view else { return }
         
@@ -23,6 +26,13 @@ class ViewController: UIViewController {
         
         gesture.setTranslation(.zero, in: view)
         guard gesture.state == .ended else { return }
+        
+        for value in Int(orangeViewFrame.minY)...Int(orangeViewFrame.maxY) {
+            if Int(blueViewFrame.origin.y) == value {
+                blueView.isHidden = true
+            }
+        }
+        
     }
     
     @IBAction func purpleViewPanAction(_ gesture: UIPanGestureRecognizer) {
