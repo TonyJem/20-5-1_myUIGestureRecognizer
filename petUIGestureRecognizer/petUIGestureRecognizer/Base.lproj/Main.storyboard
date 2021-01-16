@@ -26,7 +26,7 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JEA-92-SyC">
-                                <rect key="frame" x="0.0" y="44" width="414" height="170"/>
+                                <rect key="frame" x="20" y="44" width="374" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                             </view>
