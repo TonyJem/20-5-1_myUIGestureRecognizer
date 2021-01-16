@@ -46,7 +46,11 @@
                         <outlet property="delegate" destination="BYZ-38-t0r" id="fF6-3B-oni"/>
                     </connections>
                 </panGestureRecognizer>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="kWn-SO-WE0"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="kWn-SO-WE0">
+                    <connections>
+                        <outlet property="delegate" destination="8bC-Xf-vdC" id="FWa-ff-VPa"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-146.37681159420291" y="137.94642857142856"/>
         </scene>
