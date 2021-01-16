@@ -13,6 +13,7 @@
 		3A7FF9B225B2174F0082D46D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A7FF9B025B2174F0082D46D /* Main.storyboard */; };
 		3A7FF9B425B217510082D46D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A7FF9B325B217510082D46D /* Assets.xcassets */; };
 		3A7FF9B725B217510082D46D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A7FF9B525B217510082D46D /* LaunchScreen.storyboard */; };
+		3A7FF9C025B2F62F0082D46D /* MixGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7FF9BF25B2F62F0082D46D /* MixGesture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3A7FF9B325B217510082D46D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A7FF9B625B217510082D46D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A7FF9B825B217510082D46D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A7FF9BF25B2F62F0082D46D /* MixGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixGesture.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				3A7FF9AA25B2174F0082D46D /* AppDelegate.swift */,
 				3A7FF9AC25B2174F0082D46D /* SceneDelegate.swift */,
 				3A7FF9AE25B2174F0082D46D /* ViewController.swift */,
+				3A7FF9BF25B2F62F0082D46D /* MixGesture.swift */,
 				3A7FF9B025B2174F0082D46D /* Main.storyboard */,
 				3A7FF9B325B217510082D46D /* Assets.xcassets */,
 				3A7FF9B525B217510082D46D /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A7FF9C025B2F62F0082D46D /* MixGesture.swift in Sources */,
 				3A7FF9AF25B2174F0082D46D /* ViewController.swift in Sources */,
 				3A7FF9AB25B2174F0082D46D /* AppDelegate.swift in Sources */,
 				3A7FF9AD25B2174F0082D46D /* SceneDelegate.swift in Sources */,
