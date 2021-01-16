@@ -6,4 +6,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
+    
+    
+    @IBAction func panAction(_ sender: UIPanGestureRecognizer) {
+    }
 }
